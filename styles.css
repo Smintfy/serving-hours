@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Inter:opsz@14..32&display=swap');
 
 body {
-    display: grid;
-    place-items: center;
     height: 100vh;
     margin: 0;
     -webkit-user-select: none; /* Safari */
@@ -32,11 +30,13 @@ p {
   }
 
 .container {
+    padding-top: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
     gap: 32px;
+    text-align: center;
 }
 
 .label {
@@ -57,7 +57,14 @@ p {
     }
 
     .label {
-        height: 30px;
+        height: 32px;
         padding: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 }
